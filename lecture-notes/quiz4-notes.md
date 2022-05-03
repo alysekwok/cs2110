@@ -62,3 +62,26 @@ keyword that allows you to create a new type that is an alias for an existing on
 example: `typedef unsigned char BYTE; `
 
 not BYTE can represent the type unsigned char
+
+## pointers
+variables that contain a memory address as well as the type of data that's expected to be found at that address
+- a * after a type denotes a pointer
+- a & in fron tof something with a memory address gives its address, which can be stored as a pointer
+
+examples:
+
+of * after a pointer:
+
+`char *x` x is a pointer to a char
+
+`char **y` y is a pointer to a pointer to a char
+
+of & in front of something with a memory address:
+
+`char i = 1; //stores the value 1`
+
+`char *x = &1 // x stores the address of the variable i`
+
+## pointer arithmetic
+
+
