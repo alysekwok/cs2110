@@ -11,3 +11,17 @@
 **execute:** now that the FSM has decoded the instruction, it will assert the signals on the datapath in order to move data around and execute the instruction
 
 ## pseudo-ops and memory layout
+
+## the stack
+
+### reserved registers
+
+**R7** - holds the current reserve address
+
+**R6** - holds the stack pointer, aka top of the stack
+- when more data gets pushed on, R6 gets decremented
+- when data gets popped off, R6 gets incremented
+
+**R5** - holds the frame pointer
+- 'anchor' of the stack frame -- never changes throughout a function's execution
+- basically a constant point that we can always reference (in comparision to the stack pointer, which is constantly moving depending on what is being pushed/popped off the stack)
