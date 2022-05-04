@@ -39,3 +39,7 @@
 **register file**
 tracing instructions
 
+## combinational v.s. sequential logic
+**combinational:** MUX, decoder, adders, ALU
+**sequential:** RS latch, D latch, registers
+- usually circuits that built on sequential logic use clocks
